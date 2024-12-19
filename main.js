@@ -1,4 +1,5 @@
 const nemo = ['nemo'];
+const large = new Array(100).fill('nemo')
 
 function findNemo(array) {
   let t0 = performance.now()
@@ -11,4 +12,4 @@ function findNemo(array) {
   console.log(t1-t0)
 }
 
-findNemo(nemo);
+findNemo(large);
