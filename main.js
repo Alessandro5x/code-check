@@ -1,5 +1,5 @@
 const nemo = ['nemo'];
-const large = new Array(100).fill('nemo')
+const large = new Array(10000).fill('nemo')
 
 function findNemo(array) {
   let t0 = performance.now()
@@ -12,4 +12,4 @@ function findNemo(array) {
   console.log(t1-t0)
 }
 
-findNemo(large);
+findNemo(large); // O (n) --> Linear Time
